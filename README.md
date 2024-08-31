@@ -76,7 +76,7 @@ dotnet ef database update
 ```
 
 
-
+# EF Core CLI
 ```
 Install EF Specific version : dotnet tool install --global dotnet-ef --version 6.0
 ```
