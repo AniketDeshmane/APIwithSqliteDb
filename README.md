@@ -12,13 +12,13 @@ Step 0 : Add the required depandancy from the nuget package [.csproj]
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.33" />
 
 Step 1 : Add the connection string in [appsetting.json]
-
+```
 {
   "ConnectionStrings": {
     "DefaultConnectionString": "Data Source=apiwithsqlite.db"
   }
 }
-
+```
 
 step 2 : Create the model which will be used as mapper [Employee.cs]
 
@@ -44,7 +44,7 @@ step 3 : Create the context class for the sqllite db [DataContext.cs]
 
 
 Step 4 : Add the dbcontext services in program.cs file
-
+```
 //Add the dependancy
 builder.Services.AddDbContext<DataContext>
                                         (options => 
@@ -52,9 +52,9 @@ builder.Services.AddDbContext<DataContext>
                                             builder.Configuration.GetConnectionString("DefaultConnectionString")
                                             )
                                         );
-
+```
 Step 5: 
-
+```
 Create the migration : dotnet ef migrations add initial
 Apply the migrations : dotnet ef database update
 
@@ -68,3 +68,4 @@ dotnet tool uninstall --global dotnet-ef
 Create the migration : dotnet ef migrations add initial
 
 Apply the migrations : dotnet ef database update
+```
