@@ -10,13 +10,14 @@ Step 0 : Add the required depandancy from the nuget package [.csproj]
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.33">
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.33" />
 
+
 Step 1 : Add the connection string in [appsetting.json]
 
-{
-  "ConnectionStrings": {
-    "DefaultConnectionString": "Data Source=apiwithsqlite.db"
-  }
-}
+    {
+        "ConnectionStrings": {
+        "DefaultConnectionString": "Data Source=apiwithsqlite.db"
+        }
+    }
 
 
 step 2 : Create the model which will be used as mapper [Employee.cs]
