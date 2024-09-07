@@ -59,6 +59,11 @@ Step 5:
 Create the migration : dotnet ef migrations add initial
 Apply the migrations : dotnet ef database update
 
+OR
+
+Create the migration : Add-Migration "Initail"
+Apply the migrations : update database
+
 ```
 Steps to use this CRUD API project
 1) Git clone the repo
